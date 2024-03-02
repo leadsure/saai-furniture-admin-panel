@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.shadowww {
+  -webkit-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.26);
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 1500ms ease;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
